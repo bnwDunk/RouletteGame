@@ -104,7 +104,7 @@ class Game:
                 elif bet.bet_type == 'odd' and winning_number % 2 != 0 and winning_number > 18:
                     player.balance += bet.amount * 4
                 else:
-                    player.balance = bet.amount - player.balance
+                    player.balance - bet.amount 
 
     def print_player_balances(self):
         for player in self.players:
